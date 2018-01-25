@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ENEPET CEARÁ 2018</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="icon" href="img/logo.png"> 
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">ENEPET 2018</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Comunicados & Evento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Comissões</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Cidade</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Mapa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="subir">
+          <div class="intro-lead-in">2018</div>
+          <div class="intro-heading text-uppercase">ENEPET CEARÁ</div>
+          </div>
+          <strong><p class="contagemTitulo">CONTAGEM REGRESSIVA</p></strong>
+          <div class="contagem">
+          <table><tr><td><div class="numero" id="dia"></div></td></td><td><div class="numero" id="hora"></div></td><td><div class="numero" id="minuto"></div></td><td><div class="numero" id="segundo"></div></td></tr>
+          <strong><tr style="height:20px"><td><p class="legenda">DIAS</p></td><td><p class="legenda">HORAS</p></td><td><p class="legenda">MIN</p></td><td><p class="legenda">SEG</p></td></tr></strong></table>
+          </table>
+        </div> 
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Sobre</a>     
+           <script>
+            var target_date = new Date("april 28, 2018").getTime();
+            var dias, horas, minutos, segundos;
+            var regressiva = document.getElementById("regressiva");
+
+            setInterval(function () {
+
+                var current_date = new Date().getTime();
+                var segundos_f = (target_date - current_date) / 1000;
+
+            dias = parseInt(segundos_f / 86400);
+                segundos_f = segundos_f % 86400;
+                
+                horas = parseInt(segundos_f / 3600);
+                segundos_f = segundos_f % 3600;
+                
+                minutos = parseInt(segundos_f / 60);
+                segundos = parseInt(segundos_f % 60);
+
+                document.getElementById('dia').innerHTML = dias;
+            document.getElementById('hora').innerHTML = horas;
+            document.getElementById('minuto').innerHTML = minutos;
+            document.getElementById('segundo').innerHTML = segundos;
+    
+
+            }, 1000);
+          </script>
+        </div>
+      </div>
+
+    </header>
+
+
+    <section id="services">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading text-uppercase">COMUNICADOS</h2>
+              <h3 class="section-subheading text-muted">Esteja atualizados sobre as últimas informações do ENEPET 2018. <p>Visite a nossa página do <a href="https://www.facebook.com/enepetceara2018/">Facebook</a></p></h3>
+            <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="extraimagem" src="img/slide/enepet1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="extraimagem" src="img/slide/enepet2.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="extraimagem" src="img/slide/enepet3.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Services -->
+      <div class="subir">
+      <section id="services">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading text-uppercase">EVENTO</h2>
+              <h3 class="section-subheading text-muted">Fique por dentro de tudo que vai acontecer neste encontro.</h3>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-4">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-user-circle fa-stack-1x fa-inverse"></i>
+              </span>
+              <h3 class="service-heading">Inscrições</h3>
+              <button type="button" class="btn btn-primary corbutao"><a href="https://enepet2018.herokuapp.com"><div class="letra">Realize Sua Inscrição</div></a></button>
+              <p class="text-muted">Realize sua inscrição, não perca tempo. Faça logo a sua.</p>
+            </div>
+            <div class="col-md-4">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-hand-o-up fa-stack-1x fa-inverse"></i>
+              </span>
+              <h3 class="service-heading">Sobre os Resumos</h3>
+              <button type="button" class="btn btn-primary corbutao"><a href="https://drive.google.com/open?id=1H4kDclTLaAHrVeQvJkfetlcouYZSOwvZ"><div class="letra">Veja Todos os Resumos</div></a></button>
+              <p class="text-muted">Todas as informações a respeito da submissão de trabalhos estão aqui: datas importantes, modelos de resumo e banner.</p>
+            </div>
+            <div class="col-md-4">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-slideshare fa-stack-1x fa-inverse"></i>
+              </span>
+              <h3 class="service-heading">Atividades</h3>
+              <button type="button" class="btn btn-primary corbutao">Saiba Sobre</button>
+              <p class="text-muted">Aqui você pode acessar as nossas atividades culturais e científicas.</p>
+            </div>
+
+            <div class="col-md-4">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+              </span>
+              <h3 class="service-heading">Cronograma</h3>
+              <button type="button" class="btn btn-primary corbutao">Observar Cronograma</button>
+              <p class="text-muted">Saiba sobre os dias, locais e horários das programações que ocorrerão durante o evento.</p>
+            </div>
+            <div class="col-md-4">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+              </span>
+              <h3 class="service-heading">Certificados</h3>
+              <button type="button" class="btn btn-primary corbutao">Obter Certificado</button>
+              <p class="text-muted">Consiga o seu certificado!.</p>
+            </div>
+      </div>
+      </section>
+          </div>
+        </div>
+    </div>
+
+
+        <!-- Redes Sociais -->
+                  <div class="subirRedeSocial">
+                    <div class="container">
+                    <div class="row text-center">
+                      <div class="col-md-7">
+                        <span class="fa-stack fa-5x">
+                          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                          <i class="fa fa-facebook fa-stack-1x fa-gray"></i>
+                        </span>
+                        <h3 class="service-heading"><a href="https://www.facebook.com/enepetceara2018/">Facebook</a></h3>
+                      </div>
+                      <div class="col-md-4">
+                        <span class="fa-stack fa-5x">
+                          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                          <i class="fa fa-instagram fa-stack-1x fa-gray"></i>
+                        </span>
+                        <h3 class="service-heading">Instagram</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">COMISSÕES</h2>
+            <h3 class="section-subheading text-muted">Entenda como funciona cada comissão do ENEPET 2018.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid img-responsive" src="img/portfolio/01-thumbnail.png"  alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Comunicação</h4>
+              <p class="text-muted">Saiba Sobre</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/02-thumbnail.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Científica</h4>
+              <p class="text-muted">Saiba Sobre</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/03-thumbnail.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Cultural</h4>
+              <p class="text-muted">Saiba Sobre</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/04-thumbnail.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Finanças</h4>
+              <p class="text-muted">Saiba Sobre</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/05-thumbnail.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Festas</h4>
+              <p class="text-muted">Saiba Sobre</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/06-thumbnail.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Acompanhamento</h4>
+              <p class="text-muted">Saiba Sobre</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid img-responsive" src="img/portfolio/07-thumbnail.png"  alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Infraestrutura</h4>
+              <p class="text-muted">Saiba Sobre</p>
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Cidade</h2>
+            <h3 class="section-subheading text-muted">Descubra os pontos turisticos de Fortaleza.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Centro do Dragão do Mar</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">O Centro Dragão do Mar de Arte e Cultura (CDMAC) é um dos maiores centros culturais do Brasil. São 30 mil metros quadrados de área dedicada à arte e à cultura, com atrações como o Museu da Cultura e da Arte Contemporânea, o Planetário, o Teatro, a Biblioteca Leonilson, e outras atrações.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Parque Ecológico</h4>
+                    <h4 class="subheading">do Rio Cocó</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">O Parque Estadual do Cocó é um parque estadual de conservação da vida natural que tem uma área de 1.575 hectares da zona limite entre as cidades de Fortaleza e Maracanaú. É o quarto maior parque urbano da América Latina e do Brasil.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Mercado Central</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">O Mercado Central de Fortaleza é um mercado especializado em produtos artesanais cearense que esta localizado no Centro da cidade, ao lado da Catedral e da Fortaleza de Nossa Senhora da Assunção. Esses dois locais também são interessantes.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Beira Mar</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">A Praia de Iracema é uma praia de bairro nobre homônimo localizados no município de Fortaleza, no estado do Ceará, no Brasil. Seu nome vem da personagem Iracema, que dá título ao romance Iracema, do escritor cearense José de Alencar.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <a href="https://guia.melhoresdestinos.com.br/pontos-turisticos-de-fortaleza-142-1489-p.html"><h4>Saiba Mais
+                    <br>Sobre
+                    <br>A Cidade</h4></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team -->
+    <section class="bg-light" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">MAPA - UFC</h2>
+            <h3 class="section-subheading text-muted">Saiba os melhores locais da Universidade Federal do Ceará.</h3>
+          </div>
+        </div>
+          <div class="col-sm-12">
+            <div class="team-member">
+              <img class="mx-auto" src="img/team/MapaUFC.jpeg" alt="">
+              <h4>Mapa</h4>
+              <p class="text-muted">Download do Mapa da Universidade Federal do Ceará - UFC</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://drive.google.com/file/d/1br_WjpNoETDRQ4blsSgIVFgEiZzG2iVC/view">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </section>
+
+    <img class="extraimagem" src="img/extralogo.png" >
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">CONTATO</h2>
+            <h3 class="section-subheading text-muted">Em caso de dúvidas, fale conosco!</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="contactForm" name="sentMessage" method="POST" action="enviaEmail.php">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" id="name" name="name" type="text" placeholder="Nome Completo *" required>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="email" name="email" type="email" placeholder="Email *" required>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="phone" name="phone" type="tel" placeholder="Telefone">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea class="form-control" id="message"  name="message" placeholder="Mensagem *" required></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; COMUNICAÇÃO - ENEPET 2018</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/enepetceara2018/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <h5><a href="http://www.ceara.gov.br/">Ceará</a></h5>
+              </li>
+              <li class="list-inline-item">
+                <h5><a href="https://seuhistory.com/hoje-na-historia/e-fundada-cidade-de-fortaleza?language=pt-br">Fortaleza</a></h5>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Comunicação</h2>
+                  <p class="item-intro text-muted">Saiba tudo sobre a comissão de comunicação!</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.png" alt="">
+                  <p>Responsável pela beleza do evento. Cuida da fanpage, email e Instagram e garante que todas as informações sejam postadas da melhor maneira possível.</p>
+                  <ul class="list-inline">
+                    <li>Membros:</li>
+                    <p>Marcele Maia de Sousa Vasconcelos, Izabel Cristina de Souza, Gabriela de Lima Rocha, Andrea Gisele Limeira Paz, Denis Menezes de Sousa, Jennifer Bruna Oliveira de Brito</p>
+                    <p></p>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Científica</h2>
+                  <p class="item-intro text-muted">Saiba tudo sobre a comissão científica!</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.png" alt="">
+                  <p>Responsável por organizar o evento com seus GDs e GTs, assembleia, mediadores, trabalhos científicos, etc.</p>
+                  <ul class="list-inline">
+                    <li>Membros:</li>
+                    <p>Sabrina Oliveira, Laís Cavalcante, Lindemberg Paulino, Beatriz Amorim, Lauro Sampaio, Matheus Pinheiro, Bianca Vasconcelos ,Victória Almeida, Diego Vieira, Samuel Tavares</p>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Cultural</h2>
+                  <p class="item-intro text-muted">Saiba tudo sobre a comissão cultural!</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.png" alt="">
+                  <p>Comissão responsável por mostrar a nossa cultura para vocês, seja por meio de oficinas, apresentações culturais, brincadeiras, etc. </p>
+                  <ul class="list-inline">
+                    <li>Membros:</li>
+                    <p>Alyne Nogueira Paz, Angélica Maria da Silva, Daniela Maria Freire, Laylla Sharon Bezerra, Livia Moreira Lima, Luan Lucas Cipriano, Luana Sousa de Carvalho, Thainá Ramos Queiroz</p>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Finanças</h2>
+                  <p class="item-intro text-muted">Saiba tudo sobre a comissão de finanças!</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.png" alt="">
+                  <p>Cuida de todo dinheiro do evento e garante todas as compras e gerenciamento dos nossos recursos. </p>
+                  <ul class="list-inline">
+                    <li>Membros:</li>
+                    <p>Caio Agular, Jéssica Aragão, Suiane Meio, Váleria Ramos, Vitória Nunes, Beatriz Carvalho</p>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Festas</h2>
+                  <p class="item-intro text-muted">Saiba tudo sobre a comissão de festas!</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.png" alt="">
+                  <p>Responsável pela festa oficial do evento.</p>
+                  <ul class="list-inline">
+                    <li>Membros:</li>
+                    <P>Antônio Izidro Rocha Neto, Jhonatas Teixeira Viana, Lineker Sampaio Luque, Antônia Valeska Alves dos Santos, Maria Messianne de Sousa Vieira</P>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Acompanhamento</h2>
+                  <p class="item-intro text-muted">Saiba tudo sobre a comissão de acompanhamento!</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.png" alt="">
+                  <p> Responsável pelo credenciamento e por apadrinhar cada delegação, garantindo que sua estadia nessa cidade seja a melhor.</p>
+                  <ul class="list-inline">
+                    <li>Membros:</li>
+                    <p>Beatriz Viana da Silva, Carlos Eduardo de Lima Ponciano, Gabriella Farias Lopes, Jarlane Viana Moreira, Joelia Silva Cavalcante, Marcela Matias Sena, Matheus Saboia Marinho, Mayara Maria Silva da Cruz Alencar, Nicholas Ribeiro, Renan Melo Barros, Rômulo Cavalcante Ribeiro, Suellen Silva Vaz, Thays Silva de Souza Lopes, William Axel Silva Vasconcelos</p>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 7 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Infraestrutura</h2>
+                  <p class="item-intro text-muted">Saiba tudo sobre a comissão de infraestrutura!</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/07-full.png" alt="">
+                  <p>Responsável por preparar e conseguir todos os detalhes sobre o local em que ocorrerá o evento.</p>
+                  <ul class="list-inline">
+                    <li>Membros:</li>
+                    <p>Thaynara Ferreira Lopes, Hanna Gadelha Silva, Matheus Tavares França da Silva, Jefferson Hannover Faustino Magalhães, Antônio Emanuel Marques dos Santos, Rômulo Ferreira Fraga, Milena Sampaio Gama, Jordana Marjorie Barbosa do Nascimento, Vitória Caroline da Cunha Rodrigues</p>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,149 @@
+.corCab{
+	font-family: arial; verdana;
+	font-size: 55pt;
+	position: relative;
+	top: -50px
+}
+
+.subtitulo{
+	font-family: arial; verdana;
+	font-size: 25pt;
+	position: relative;
+	top: 90px;
+}
+
+.subir{
+	position: relative;
+	top: -120px;
+}
+
+.subirmais{
+	position: relative;
+	top: -200px;
+}
+
+.subirRedeSocial{
+	position: relative;
+	top: -110px;
+}
+
+.subirContato{
+	position: relative;
+	top: -50px;
+}
+
+.descerInformacoes{
+	position: relative;
+	top: 40px;
+}
+
+.emailtelefone{
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: white;
+}
+
+.emailtelefone2{
+	font-family: Arial Narrow, sans-serif;
+	color: white;
+}
+
+.blocoduvida{
+	position: relative;
+	top: 255px;
+	left: 165px;
+}
+
+.corbutao{
+	background: #4169E1;
+	border-color: #4169E1; 
+}
+
+.letra{
+	color: white;
+}
+
+.letrapreta{
+	color: black;
+}
+
+.contagem{
+font-family: Helvetica, sans-serif;
+min-width: 250px;
+margin: 0 auto;
+padding: 1%;
+align-items: center;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.numero
+{
+min-width: 40px;
+max-width: 110px;
+background-color: #efefef;
+color: #000000;
+font-size: 44px;
+margin: 10px;
+text-align: center;
+border-radius: 10px;
+padding: 10px;
+font-family: Helvetica, sans-serif;
+}
+
+.legenda{
+height: 50px;
+line-height: 20px;
+font-size: 28px;
+text-align: center;
+font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+color: white;
+}
+
+
+.contagemTitulo{
+font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size: 30px;	
+margin: 0 auto;
+width: 50%;
+color: white;
+}
+
+.contagemTitle{
+font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size: 65px;	
+margin: 0 auto;
+width: 50%;
+color: black;
+}
+
+.contagemsubTitle{
+font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size: 65px;	
+margin: 0 auto;
+width: 50%;
+color: black;
+}
+
+
+.extraimagem{
+	max-width: 100%;
+	width: 100%;
+}
+
+.imagemturistico{
+	max-width: 100%;
+}
+
+a:hover {
+	text-decoration: underline; 
+	color: black;
+	}
+a:link, a:visited {
+	text-decoration: black;
+	color:black;
+	}
+a:active {
+	text-decoration: white;
+	}
